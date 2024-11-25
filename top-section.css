@@ -1,0 +1,124 @@
+@import url("base.css");
+@import url("download-buttons.css");
+
+/* Top main section */
+.top-section{
+    background: linear-gradient(180deg, #CADD61 0%, #F8F9FA 100%);
+    padding: 10px;
+}
+
+.top-section .main-information {
+    display: flex; 
+    flex-direction: column;
+    text-align: center;
+    padding: 50px 50px 20px 50px; 
+}
+
+.top-section .main-information h1 {
+    font-size: 32px;
+    color: var(--primary-font-color);
+    font-weight: bold;
+}
+
+.top-section .main-information p {
+    font-size: 16px;
+    color: var(--secondary-font-color);
+}
+
+.top-section .top-arrow{
+    height: 40px;
+}
+
+.top-section .top-arrow img{
+    width: 50px;
+    height: auto;
+    position: absolute;
+    right: 10px;
+    top: 218px;
+    transform: rotate(-10deg);
+}
+
+.top-section .download-buttons {
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    width: 40%;
+    height: auto;
+    gap: 10px;
+    padding-bottom: 20px;
+} 
+
+.top-section .bottom-arrow{
+    height: 20px;
+}
+
+.top-section .bottom-arrow img{
+    width: 75px;
+    height: auto;
+    position: absolute;
+    left: 70px;
+    top: 330px;
+    transform: rotate(-30deg);
+}
+
+.top-section .right-circle{
+    height: 42px; 
+    width: 42px; 
+    background: linear-gradient(90deg, #FA5958, #F5658F, #FDB653);
+    border-radius: 50%; 
+    position: absolute;
+    top: 400px;
+    right: 15px;
+}
+
+.top-section .left-circle{
+    height: 70px; 
+    width: 70px; 
+    background: linear-gradient(90deg, #E2B48E, #E29669);
+    border-radius: 50%; 
+    position: absolute;
+    top: 415px;
+    left: -15px;
+}
+
+.top-section .overview{
+    display: flex;
+    justify-self: center;
+}
+
+.top-section .overview img{
+    
+}
+
+.top-section .statistic-bar{
+    height: 55px;
+    border-radius: 21rem;
+    background: linear-gradient(180deg, #CADD61 0%, #F8F9FA 100%);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 10px 20px;
+}
+
+.top-section .statistic-bar .statistic-column{
+    display: flex; 
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+}
+
+.top-section .statistic-bar .stat-number{
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.top-section .statistic-bar .stat-label{
+    font-size: 14px;
+}
+
+
+@media (min-width: 600px){
+    .top-section .download-buttons{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);  
+    }
+}

@@ -1,0 +1,91 @@
+@import url("base.css");
+
+/* apple button */
+.download-buttons .download-buttons-apple{
+    display: inline-flex;
+    align-items: center;
+    background-color: white;
+    color: black;
+    border: none;
+    border-radius: 30px;
+    padding: 5px;
+    text-decoration: none;
+    white-space: nowrap;
+    transition: all 0.3s ease; 
+    padding: 10px;
+    cursor: pointer;
+}
+
+.download-buttons .download-buttons-apple img {
+    margin-right: 16px;
+    width: 20px;
+    height: auto;
+}
+
+.download-buttons .download-buttons-apple .text {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.2;
+    align-items: start;
+}
+
+.download-buttons .download-buttons-apple .text span {
+    font-size: 10px;
+    color: black;
+}
+
+.download-buttons .download-buttons-apple .text strong {
+    font-size: 12px;
+    font-weight: bold;
+    color: black;
+}
+
+.download-buttons .download-buttons-apple:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* android button */
+.download-buttons .download-buttons-android{
+    display: inline-flex;
+    align-items: center;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    padding: 5px;
+    text-decoration: none;
+    white-space: nowrap;
+    transition: all 0.3s ease; 
+    padding: 10px;
+    cursor: pointer;
+}
+
+.download-buttons .download-buttons-android img {
+    margin-right: 16px;
+    width: 20px;
+    height: auto;
+}
+
+.download-buttons .download-buttons-android .text {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.2;
+    align-items: start;
+}
+
+.download-buttons .download-buttons-android .text span {
+    font-size: 10px;
+    color: #ccc;
+}
+
+.download-buttons .download-buttons-android .text strong {
+    font-size: 12px;
+    font-weight: bold;
+    color: white;
+}
+
+.download-buttons .download-buttons-android:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3);
+}
