@@ -12,6 +12,22 @@
     grid-template-columns: 1fr;
     align-items: center;
     justify-items: center;
+    position: relative;
+    z-index: 0;
+}
+
+.overview-section .content .middle-wave{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    /* left: -370px; */
+    height: 100%;
+    /* width: 100vw; */
+    width: 100%;
+    background: url(middle-wave.svg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    z-index: -1;
 }
 
 .overview-section .content .text-content{
@@ -42,6 +58,37 @@
 
 .overview-section .content .phone-mockup{ 
     position: relative;
+    z-index: 1;
+}
+
+.overview-section .content .phone-mockup .first-circle{
+    height: 14px; 
+    width: 14px; 
+    background: linear-gradient(90deg, #DAA5DE, #AC8BF0);
+    border-radius: 50%; 
+    position: absolute;
+    top: 130px;
+    right: 15px;
+}
+
+.overview-section .content .phone-mockup .second-circle{
+    height: 14px; 
+    width: 14px; 
+    background: linear-gradient(90deg, #D0AFD1, #DDA8B7);
+    border-radius: 50%; 
+    position: absolute;
+    top: 190px;
+    right: -15px;
+}
+
+.overview-section .content .phone-mockup .third-circle{
+    height: 22px; 
+    width: 22px; 
+    background: linear-gradient(90deg, #E2B48E, #E29669);
+    border-radius: 50%; 
+    position: absolute;
+    top: 400px;
+    left: -20px;
 }
 
 .overview-section .content img{
@@ -62,7 +109,7 @@
     border-radius: 50%;  
 }
 
-@media (min-width: 600px) {
+@media (min-width: 756px) {
     .overview-section .content{
         grid-template-columns: repeat(2, 1fr);
         gap: 20px;
@@ -71,7 +118,7 @@
     .overview-section .content:nth-child(odd) .text-content{
         order: 2;
         text-align: left;
-        align-self: start;
+        align-self: center;
     }
 
     .overview-section .content:nth-child(odd) .phone-mockup{
@@ -80,7 +127,7 @@
 
     .overview-section .content:nth-child(even) .text-content{
         order: 1;
-        align-self: start;
+        align-self: center;
         text-align: left;
         padding-left: 50px;
     }
@@ -89,36 +136,3 @@
         order: 2;
     }
 }
-
-
-
-
-/* .overview-section .content .first-circle{
-    height: 14px; 
-    width: 14px; 
-    background: linear-gradient(90deg, #DAA5DE, #AC8BF0);
-    border-radius: 50%; 
-    position: absolute;
-    top: 850px;
-    right: 60px;
-}
-
-.overview-section .content .second-circle{
-    height: 14px; 
-    width: 14px; 
-    background: linear-gradient(90deg, #D0AFD1, #DDA8B7);
-    border-radius: 50%; 
-    position: absolute;
-    top: 900px;
-    right: 30px;
-}
-
-.overview-section .content .third-circle{
-    height: 22px; 
-    width: 22px; 
-    background: linear-gradient(90deg, #E2B48E, #E29669);
-    border-radius: 50%; 
-    position: absolute;
-    top: 1135px;
-    left: 20px;
-} */

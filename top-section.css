@@ -16,7 +16,7 @@
 }
 
 .top-section .main-information h1 {
-    font-size: 32px;
+    font-size: 40px;
     color: var(--primary-font-color);
     font-weight: bold;
 }
@@ -24,55 +24,63 @@
 .top-section .main-information p {
     font-size: 16px;
     color: var(--secondary-font-color);
-    padding-bottom: 50px;
+    margin-bottom: -10px;
 }
 
-.top-section .top-arrow img{
+.top-section .overview{
+    position: relative;
+    z-index: 0;
+}
+
+.top-section .overview .top-arrow img{
     width: 70px;
     height: auto;
     position: absolute;
-    right: 10%;
-    top: 30%;
-    transform: rotate(-10deg);
+    right: 0px;
+    top: -160px;
+    transform: rotate(10deg);
 }
 
 .top-section .download-buttons {
     display: flex;
     flex-direction: column;
     justify-self: center;
+    align-items: center;
     width: 40%;
     height: auto;
     gap: 10px;
-    padding-bottom: 20px;
+    padding: 40px 0 20px 0;
 } 
 
-.top-section .bottom-arrow img{
+.top-section .overview .bottom-arrow img{
     width: 75px;
     height: auto;
     position: absolute;
-    left: 20%;
-    top: 48%;
+    left: 20px;
+    top: -40px;
     transform: rotate(-30deg);
 }
 
-.top-section .right-circle{
-    height: 42px; 
-    width: 42px; 
+.top-section .overview .right-circle{
+    height: 50px; 
+    width: 50px; 
     background: linear-gradient(90deg, #FA5958, #F5658F, #FDB653);
     border-radius: 50%; 
     position: absolute;
-    top: 400px;
-    right: 15px;
+    top: 70px;
+    right: -10px;
+    z-index: -1;
 }
 
-.top-section .left-circle{
+.top-section .overview .left-circle{
     height: 70px; 
     width: 70px; 
     background: linear-gradient(90deg, #E2B48E, #E29669);
     border-radius: 50%; 
     position: absolute;
-    top: 415px;
-    left: -15px;
+    top: 78px;
+    left: -35px;
+    z-index: -1;
 }
 
 .top-section .overview{
@@ -87,10 +95,14 @@
 .top-section .statistic-bar{
     height: 55px;
     border-radius: 21rem;
-    background: linear-gradient(180deg, #CADD61 0%, #F8F9FA 100%);
+    background: #CADD61;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     padding: 10px 20px;
+    margin: -4px auto 36px;
+    z-index: 1;
+    position: relative;
+    max-width: 550px;
 }
 
 .top-section .statistic-bar .statistic-column{
@@ -109,10 +121,11 @@
     font-size: 14px;
 }
 
-
-@media (min-width: 600px){
+@media (min-width: 756px){
     .top-section .download-buttons{
-        display: grid;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
         grid-template-columns: repeat(2, 1fr);  
     }
 }

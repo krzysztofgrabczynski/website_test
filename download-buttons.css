@@ -1,11 +1,8 @@
 @import url("base.css");
 
-/* apple button */
-.download-buttons .download-buttons-apple{
+.download-button{
     display: inline-flex;
     align-items: center;
-    background-color: white;
-    color: black;
     border: none;
     border-radius: 30px;
     padding: 5px;
@@ -17,77 +14,58 @@
     width: fit-content;
 }
 
-.download-buttons .download-buttons-apple img {
+.download-button img {
     margin-right: 16px;
     width: 20px;
     height: auto;
 }
 
-.download-buttons .download-buttons-apple .text {
+.download-button .text {
     display: flex;
     flex-direction: column;
     line-height: 1.2;
     align-items: start;
 }
 
-.download-buttons .download-buttons-apple .text span {
+.download-button .text span {
     font-size: 10px;
-    color: black;
 }
 
-.download-buttons .download-buttons-apple .text strong {
+.download-buttons-apple .text strong {
     font-size: 12px;
     font-weight: bold;
+}
+
+.download-button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* apple button */
+.download-button-apple{
+    background-color: white;
     color: black;
 }
 
-.download-buttons .download-buttons-apple:hover {
-    transform: scale(1.05);
-    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3);
+.download-button-apple .text span{
+    color: black;
+}
+
+.download-button-apple .text strong {
+    color: black;
 }
 
 /* android button */
-.download-buttons .download-buttons-android{
-    display: inline-flex;
-    align-items: center;
+.download-button-android{
     background-color: black;
     color: white;
-    border: none;
-    border-radius: 30px;
-    padding: 5px;
-    text-decoration: none;
-    white-space: nowrap;
-    transition: all 0.3s ease; 
-    padding: 12px 16px;
-    cursor: pointer;
-    width: fit-content;
 }
 
-.download-buttons .download-buttons-android img {
-    margin-right: 16px;
-    width: 20px;
-    height: auto;
-}
-
-.download-buttons .download-buttons-android .text {
-    display: flex;
-    flex-direction: column;
-    line-height: 1.2;
-    align-items: start;
-}
-
-.download-buttons .download-buttons-android .text span {
-    font-size: 10px;
+.download-button-android .text span {
     color: #ccc;
 }
 
-.download-buttons .download-buttons-android .text strong {
-    font-size: 12px;
-    font-weight: bold;
-    color: white;
-}
+.download-button-android .text strong {
 
-.download-buttons .download-buttons-android:hover {
-    transform: scale(1.05);
-    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3);
+    color: white;
 }

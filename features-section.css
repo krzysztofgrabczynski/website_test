@@ -16,7 +16,7 @@
 .feature-section .feature-grid{
     display: grid;
     grid-template-columns: 1fr;
-    gap: 20px;
+    gap: 36px;
 }
 
 .feature-section .feature-grid .feature-item{
@@ -41,14 +41,8 @@
     color: var(--secondary-font-color);
 }
 
-@media (min-width: 600px){
+@media (min-width: 756px){
     .feature-section .feature-grid{
         grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-@media (min-width: 1024px){
-    .feature-section .feature-grid{
-        grid-template-rows: repeat(4, 1fr);
     }
 }
