@@ -7,7 +7,7 @@ footer{
     border-radius: 10% 10% 0 0; 
 }
 
-footer .container{
+footer .footer-container{
     display: grid;
     grid-template-columns: 47% 3% 50%;
     grid-template-rows: auto auto;
@@ -22,6 +22,7 @@ footer .container{
 
 footer .text{
     grid-area: text;
+    justify-self: center;
 }
 
 footer .text h1{
@@ -44,6 +45,7 @@ footer .download-buttons{
     grid-area: download-buttons;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     gap: 10px;
 }
 
@@ -93,12 +95,5 @@ footer .privacy-policy a:hover{
     footer .download-buttons{
         display: flex;
         flex-direction: row;
-    }
-
-    footer .contact-us{
-        grid-area: contact-us;
-        display: grid;
-        justify-self: start;
-        line-height: 0.1;
     }
 }

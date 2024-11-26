@@ -4,6 +4,11 @@
 /* Top main section */
 .top-section{
     background: linear-gradient(180deg, #CADD61 0%, #F8F9FA 100%);
+}
+
+.top-section .top-section-container{
+    max-width: 1200px;
+    margin: 0 auto;
     padding: 10px;
     position: relative;
 }
