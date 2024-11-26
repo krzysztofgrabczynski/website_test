@@ -29,12 +29,12 @@ header .logo-content .logo {
 header .logo-content a{
     text-decoration: none;
     color: var(--primary-font-color);
-    font-size: 16px;
+    font-size: 18px;
     transition: all 0.3s ease;
 }
 
 header .logo-content a:hover{
-    font-size: 17px;
+    font-size: 19px;
     transform: scale(1.05);
     font-weight: 700; 
 }
@@ -43,12 +43,12 @@ header .navigation a{
     padding-right: 10px;
     text-decoration: none;
     color: var(--secondary-font-color);
-    font-size: 14px;
+    font-size: 16px;
     transition: all 0.3s ease;
 }
 
 header .navigation a:hover{
-    font-size: 15px;
+    font-size: 17px;
     transform: scale(1.05);
     font-weight: 700; 
 }

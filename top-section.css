@@ -5,6 +5,7 @@
 .top-section{
     background: linear-gradient(180deg, #CADD61 0%, #F8F9FA 100%);
     padding: 10px;
+    position: relative;
 }
 
 .top-section .main-information {
@@ -23,18 +24,15 @@
 .top-section .main-information p {
     font-size: 16px;
     color: var(--secondary-font-color);
-}
-
-.top-section .top-arrow{
-    height: 40px;
+    padding-bottom: 50px;
 }
 
 .top-section .top-arrow img{
-    width: 50px;
+    width: 70px;
     height: auto;
     position: absolute;
-    right: 10px;
-    top: 218px;
+    right: 10%;
+    top: 30%;
     transform: rotate(-10deg);
 }
 
@@ -48,16 +46,12 @@
     padding-bottom: 20px;
 } 
 
-.top-section .bottom-arrow{
-    height: 20px;
-}
-
 .top-section .bottom-arrow img{
     width: 75px;
     height: auto;
     position: absolute;
-    left: 70px;
-    top: 330px;
+    left: 20%;
+    top: 48%;
     transform: rotate(-30deg);
 }
 
@@ -87,7 +81,7 @@
 }
 
 .top-section .overview img{
-    
+    padding-top: 50px;
 }
 
 .top-section .statistic-bar{
